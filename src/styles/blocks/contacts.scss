@@ -1,0 +1,47 @@
+.contacts {
+  &__form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__form-field--textarea {
+    height: 150px;
+    width: 280px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 16px 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #292929;
+    font-family: inherit;
+    resize: none;
+    border: none;
+    outline: none;
+    @include focus-hover-shadow;
+
+    &::placeholder {
+      color: #7E7E83;
+    }
+  }
+
+  &__form-field--input {
+    box-sizing: border-box;
+    width: 280px;
+    height: 50px;
+    border-radius: 40px;
+    padding: 0 24px;
+    color: #292929;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    border: none;
+    outline: none;
+    @include focus-hover-shadow;
+
+    &::placeholder {
+      color: #7E7E83;
+    }
+  }
+}

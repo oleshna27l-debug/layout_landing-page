@@ -17,10 +17,6 @@
     margin-bottom: 40px;
   }
 
-  &__content {
-    @include content-padding-in-line;
-  }
-
   &__phone-number {
     margin-bottom: 16px;
     color: $main-text-color;
