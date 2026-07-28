@@ -1,12 +1,17 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
-  background-color: #C2C2C2;
+  overflow: auto;
   font-weight: 600;
   text-transform: uppercase;
+  background-color: #c2c2c2;
 
-  &_top {
+  &__top {
     margin-bottom: 32px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #c2c2c2;
 
     @include on-tablet {
       margin-bottom: 0;

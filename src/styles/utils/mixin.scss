@@ -30,12 +30,14 @@
 
 @mixin page-grid {
   --columns: 2;
+
   display: grid;
   column-gap: 20px;
   grid-template-columns: repeat(var(--columns), 1fr);
 
   @include on-tablet {
     --columns: 6;
+
     column-gap: 24px;
   }
 
@@ -46,12 +48,10 @@
 
 @mixin focus-hover-shadow {
   transition: box-shadow 0.2s ease;
-
   &:hover {
-    box-shadow: 1px 4px 16px 0px rgba(232, 232, 240, 0.4);
+    box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.4);
   }
-
   &:focus {
-    box-shadow: 1px 4px 16px 0px rgba(232, 232, 240, 0.64);
+    box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.64);
   }
 }

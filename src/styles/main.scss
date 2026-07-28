@@ -1,5 +1,7 @@
 .main {
-  background-color: white;
+  background-color: #1d1d1d;
+  position: relative;
+  z-index: 1;
 
   &__content {
     display: grid;

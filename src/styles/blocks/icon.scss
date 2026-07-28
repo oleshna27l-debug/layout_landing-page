@@ -4,8 +4,11 @@
   width: 24px;
   background-size: cover;
   background-position: center;
+  transition: transform 0.3s ease;
 
-  @include focus-hover-shadow;
+  &:hover {
+    transform: scale(1.2);
+  }
 
   @include on-tablet {
     height: 32px;
@@ -16,7 +19,6 @@
     background-image: url(../images/icon-phone-call.svg);
   }
 
-
   &--menu {
     background-image: url(../images/icon-burger-menu.svg);
 
@@ -24,7 +26,6 @@
       background-image: url(../images/Icon-Burger-menu-hover.svg);
     }
   }
-
 
   &--close {
     background-image: url(../images/icon-close.svg);
