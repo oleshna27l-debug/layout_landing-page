@@ -20,8 +20,11 @@
 
   &__logo {
     height: 38px;
+    transition: transform 0.3s ease;
 
-    @include focus-hover-shadow;
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @include on-tablet {
       height: 56px;

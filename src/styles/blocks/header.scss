@@ -34,6 +34,16 @@
     text-align: justify;
     vertical-align: middle;
     color: #fff;
-    margin-bottom: 36px;
+    margin-bottom: 88px;
+
+    @include on-tablet {
+      font-size: 64px;
+      margin-bottom: 130px;
+    }
+
+    @include on-desktop {
+      font-size: 80px;
+      margin-bottom: 190px;
+    }
   }
 }
