@@ -47,11 +47,19 @@
 }
 
 @mixin focus-hover-shadow {
-  transition: box-shadow 0.2s ease;
+  transition: box-shadow 0.3s ease;
   &:hover {
     box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.4);
   }
   &:focus {
     box-shadow: 1px 4px 16px rgba(232, 232, 240, 0.64);
   }
+}
+
+@mixin transition {
+  transition: transform 0.3s ease;
+}
+
+@mixin transform {
+  transform: scale(1.05);
 }

@@ -1,8 +1,8 @@
 .page {
   font-family: Poppins, sans-serif;
   line-height: 140%;
-  color: #fff;
-  background-color: $main-text-color;
+  color: $main-text-color;
+  background-color: $main-background-color;
 
   scroll-behavior: smooth;
 
@@ -20,7 +20,9 @@
     opacity: 0;
     transform: translateX(-100%);
     pointer-events: none;
-    transition: opacity 0.5s transform 0.5s;
+    transition: opacity 0.3s;
+
+    @include transition;
 
     &:target {
       opacity: 1;

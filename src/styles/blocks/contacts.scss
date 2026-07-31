@@ -11,7 +11,7 @@
     height: 50px;
     border-radius: 40px;
     padding: 0 24px;
-    color: #292929;
+    color: $form-fields-color;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -21,7 +21,7 @@
     @include focus-hover-shadow;
 
     &::placeholder {
-      color: #7e7e83;
+      color: $placeholder-color;
     }
   }
 
@@ -34,7 +34,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #292929;
+    color: $form-fields-color;
     font-family: inherit;
     resize: none;
     border: none;
@@ -43,7 +43,7 @@
     @include focus-hover-shadow;
 
     &::placeholder {
-      color: #7e7e83;
+      color: $placeholder-color;
     }
   }
 
@@ -91,7 +91,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    color: #fff;
+    color: $main-text-color;
     margin-bottom: 8px;
   }
 
@@ -99,11 +99,11 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
-    color: #fff;
+    color: $main-text-color;
     text-decoration: none;
 
     &:hover {
-      color: #c2c2c2;
+      color: $main-background-menu-color;
       transition: color 0.3s;
     }
   }

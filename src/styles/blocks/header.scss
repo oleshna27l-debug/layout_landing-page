@@ -13,27 +13,20 @@
   }
 
   &__content {
-    padding-top: 40px;
+    padding-top: 24px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
 
-  &__bottom {
-    padding-bottom: 40px;
-    align-self: center;
-  }
-
   &__title {
     font-weight: 700;
-    font-style: bold;
     font-size: 36px;
     line-height: 100%;
     letter-spacing: -1.5px;
-    text-align: justify;
-    vertical-align: middle;
-    color: #fff;
+    text-align: center;
+    color: $main-text-color;
     margin-bottom: 88px;
 
     @include on-tablet {
