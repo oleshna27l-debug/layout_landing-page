@@ -1,7 +1,5 @@
 .section-title {
-  margin: 0;
-  margin-bottom: 48px;
-  margin-top: 92px;
+  margin: 48px 0 32px;
   font-weight: 500;
   font-size: 32px;
   line-height: 100%;
@@ -15,6 +13,7 @@
 
   @include on-desktop {
     font-size: 64px;
+    margin-top: 80px;
   }
 
   &--align--left {
